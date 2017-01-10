@@ -1,0 +1,2544 @@
+<?xml version="1.0"?>
+<adapter version="2">
+	<class>com.ddtek.xmlconverter.adapter.flat.Flat</class>
+	<input encoding="windows-1252">FATCA IRAS 15-10-2037 Job 0008 YR2016.csv</input>
+	<rootName>root</rootName>
+	<pretty>-1</pretty>
+	<viewOpts>47</viewOpts>
+	<region type="lines" ignore="no">
+		<regionName></regionName>
+		<start>0</start>
+		<split>0</split>
+		<nameMode>Manual</nameMode>
+		<skipRows>0</skipRows>
+		<collapse>no</collapse>
+		<twice>yes</twice>
+		<omit>no</omit>
+		<comment/>
+		<component/>
+		<delim>34 34</delim>
+		<eol>13 10</eol>
+		<escape/>
+		<keyvalue/>
+		<regionEnd/>
+		<sep>44</sep>
+		<subcomponent/>
+		<toss/>
+		<row>
+			<rowName>row</rowName>
+			<pattern></pattern>
+			<field type="String">
+				<name>field</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+		</row>
+		<row>
+			<rowName>HEADER</rowName>
+			<pattern>^HD\,</pattern>
+			<field type="String">
+				<name>HeaderRecordType</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>FileProcessingDate</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>FileProcessingTimestamp</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>SourceSystemIndicator</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>Reserved1</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>Reserved2</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>Reserved3</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+		</row>
+		<row>
+			<rowName>MessageSpec</rowName>
+			<pattern>^MS\,</pattern>
+			<field type="String">
+				<name>MessageSpecType</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>SendingCompanyIN</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>TransmittingCountry</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>ReceivingCountry</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>MessageType</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>Warning</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>Contact</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>MessageRefId</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>CorrMessageRefId</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>ReportingPeriod</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>Timestamp</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>field</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+		</row>
+		<row>
+			<rowName>ReportingFI</rowName>
+			<pattern>^FI\,</pattern>
+			<field type="String">
+				<name>ReportingFIType</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>ResCountryCode</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>TIN</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>OrgnisationName</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>LegalAddressType</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>CountryCode</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>AddressFree</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>Street</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>BuildingIdentifier</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>SuiteIdentifier</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>FloorIdentifier</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>DistrictName</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>POB</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>PostCode</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>City</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>CountrySubEntity</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>AddressFree1</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>DocTypeIndic</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>DocRefId</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>CorrMessageRefId</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>CorrDocRefId</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>field</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="omit">Only When Empty</property>
+			</field>
+		</row>
+		<row>
+			<rowName>ReportingGroup</rowName>
+			<pattern>^RG\,</pattern>
+			<field type="String">
+				<name>ReportingGroupType</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>ReportingGroupIndicator</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>ReportingGroupValue</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>field</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+		</row>
+		<row>
+			<rowName>CorrectableOrganisationParty</rowName>
+			<pattern>^COP</pattern>
+			<field type="String">
+				<name>ReportingGroupValue</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>DocTypeIndic</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>DocRefId</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>CorrMessageRefId</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>CorrDocRefId</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>field</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>field</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>field</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="omit">Only When Empty</property>
+			</field>
+			<field type="String">
+				<name>field</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>field</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>field</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>field</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>field</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>field</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="omit">Only When Empty</property>
+			</field>
+			<field type="String">
+				<name>field</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>field</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>field</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>field</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>field</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="omit">Only When Empty</property>
+			</field>
+			<field type="String">
+				<name>field</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>field</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+		</row>
+		<row>
+			<rowName>CorrectableAcountReport</rowName>
+			<pattern>^CAR</pattern>
+			<field type="String">
+				<name>ReportingGroupValue</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>DocTypeIndic</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>DocRefId</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>CorrMessageRefId</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>CorrDocRefId</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>AccountNumber</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>AccountHolderIndicator</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>AccountHolder</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>SubstantialOwner</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>AccountBalanceCurrencyCode</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>AccountBalanceAmount</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>PaymentTypeDividends</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>PaymentTypeDividendCurrency</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>PaymentTypeDividendAmount</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>PaymentTypeInterest</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>PaymentTypeInterestCurrency</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>PaymentTypeInterestAmount</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>PaymentTypeGrossProceeds</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>PaymentTypeGrossProceedsCurrency</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>PaymentTypeGrossProceedsAmount</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>PaymentTypeOther</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>PaymentTypeOtherCurrency</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>PaymentTypeOtherAmount</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+		</row>
+		<row>
+			<rowName>CorrectablePoolReport</rowName>
+			<pattern>^CPR</pattern>
+			<field type="String">
+				<name>ReportingGroupValue</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>DocTypeIndic</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>DocRefId</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>CorrMessageRefId</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>CorrDocRefId</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>AccountCount</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>FatcaAcctPoolReportType</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>PoolBalanceCurrencyCode</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>PoolBalanceAmount</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+		</row>
+		<row>
+			<rowName>PersonParty</rowName>
+			<pattern>^PP</pattern>
+			<field type="String">
+				<name>PersonPartyValue</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>ResCountryCode</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>TIN</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>Title</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>FirstName</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>MiddleName</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>NamePrefix</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>LastName</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>GenerationIdentifier</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>Suffix</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>GeneralSuffix</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>OECDLegalAddressType</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">attribute</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>CountryCode</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>AddressFree</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>Street</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>BuildingIdentifier</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>SuiteIdentifier</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>FloorIdentifier</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>DistrictName</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>POB</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>PostalCode</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>City</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>CountrySubEntity</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>AddressFree1</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>NationalityCountryCode</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>BirthDate</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>BirthCity</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>CitySubEntity</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>CountryInfoCountryCode</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>field</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+		</row>
+		<row>
+			<rowName>OrganisationParty</rowName>
+			<pattern>^OP</pattern>
+			<field type="String">
+				<name>OrganisationPartyValue</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>ResCountryCode</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>TIN</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>OrganisationName</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>LegalAddressType</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">attribute</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>CountryCode</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>AddressFree</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>Street</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>BuildingIdentifier</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>SuiteIdentifier</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>FloorIdentifier</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>DistrictName</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>POB</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>PostCode</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>City</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>CountrySubEntity</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>AddressFree1</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Never</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>AccountHolderType</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+			<field type="String">
+				<name>field</name>
+				<subName>component</subName>
+				<subSubName>subcomponent</subSubName>
+				<property name="attr">element</property>
+				<property name="base">10</property>
+				<property name="clang">true</property>
+				<property name="decimal">'.'</property>
+				<property name="endian">Little</property>
+				<property name="lpad">TAB,' '</property>
+				<property name="money">true</property>
+				<property name="omit">Only When Empty</property>
+				<property name="rpad">TAB,' '</property>
+				<property name="signed">true</property>
+				<property name="thousands">','</property>
+				<property name="white">true</property>
+			</field>
+		</row>
+	</region>
+</adapter>

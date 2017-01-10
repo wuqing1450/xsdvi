@@ -1,0 +1,143 @@
+<?xml version="1.0"?>
+<pipeline version="0.2" zoom="66">
+	<nodes>
+		<node ID="1" Operation="INPUT" x="38" y="29" w="140" h="100" rotate="270" annotation="false">
+			<output_port name="Output" ID="2">
+				<properties>
+					<property name="Name" value="Output"/>
+					<property name="DataType" value="any"/>
+				</properties>
+			</output_port>
+			<properties>
+				<property name="Name" value="auto_delete_input"/>
+				<property name="DataType" value="any"/>
+				<property name="Default Value" isURL="true" value="FATCA IRAS 15-10-2037 Job 0008 YR2016.csv"/>
+			</properties>
+		</node>
+		<node ID="3" Operation="CONVERTTOXML" x="287" y="27" w="140" h="100" rotate="270" annotation="false">
+			<input_port name="Input" function="input" ID="4">
+				<properties>
+					<property name="Name" value="Input"/>
+					<property name="DataType" value="text"/>
+					<property name="Default Value" isURL="true" value=""/>
+				</properties>
+			</input_port>
+			<output_port name="Output" ID="5">
+				<properties>
+					<property name="Name" value="Output"/>
+					<property name="DataType" value="node"/>
+					<property name="Copy to URL" isURL="true" value=""/>
+				</properties>
+			</output_port>
+			<properties>
+				<property name="Name" value="Convert to XML"/>
+				<property name="Adapter URL" isURL="true" value="converter:./FATCA_v1.conv"/>
+			</properties>
+		</node>
+		<node ID="6" Operation="XQUERY" x="551" y="30" w="140" h="100" rotate="270" annotation="false">
+			<input_port name="Input" function="input" ID="7">
+				<properties>
+					<property name="Name" value="Input"/>
+					<property name="Default Value" isURL="true" value=""/>
+				</properties>
+			</input_port>
+			<output_port name="Output" ID="8">
+				<properties>
+					<property name="Name" value="Output"/>
+					<property name="DataType" value="any"/>
+					<property name="Copy to URL" isURL="true" value=""/>
+				</properties>
+			</output_port>
+			<properties>
+				<property name="Name" value="XQuery operator"/>
+				<property name=".xquery file" isURL="true" value="FATCA_v2.xquery"/>
+				<property name="DB Connections"/>
+			</properties>
+		</node>
+		<node ID="9" Operation="VALIDATE" x="758" y="30" w="140" h="100" rotate="270" annotation="false">
+			<input_port name="Input" function="input" ID="10">
+				<properties>
+					<property name="Name" value="Input"/>
+					<property name="DataType" value="node"/>
+					<property name="Default Value" value=""/>
+				</properties>
+			</input_port>
+			<output_port name="Output valid" ID="11">
+				<properties>
+					<property name="Name" value="Output valid"/>
+					<property name="DataType" value="node"/>
+					<property name="Copy to URL" isURL="true" value="..\..\..\IVI Technologies\XML Pipeline Server\pipelines\CSV2XML\Pipeline_Output\IBT87I.00304.ME.702.xml"/>
+				</properties>
+			</output_port>
+			<output_port name="Output invalid" ID="12">
+				<properties>
+					<property name="Name" value="Output invalid"/>
+					<property name="DataType" value="node"/>
+					<property name="Copy to URL" isURL="true" value="err.xml"/>
+				</properties>
+			</output_port>
+			<properties>
+				<property name="Name" value="Validate operator"/>
+				<property name="XML Schemas" isURL="true" value="FatcaXML_v2.0.xsd;"/>
+			</properties>
+		</node>
+		<node ID="13" Operation="STOP" x="1076" y="328" w="140" h="100" rotate="270" annotation="false">
+			<input_port name="Input" function="input" ID="14">
+				<properties>
+					<property name="Name" value="Input"/>
+					<property name="DataType" value="any"/>
+				</properties>
+			</input_port>
+			<properties>
+				<property name="Name" value="Stop"/>
+				<property name="Message" value="Error"/>
+			</properties>
+		</node>
+		<node ID="15" Operation="OUTPUT" x="1016" y="31" w="140" h="100" rotate="270" annotation="false">
+			<input_port name="Input" function="input" ID="16">
+				<properties>
+					<property name="Name" value="Input"/>
+					<property name="DataType" value="any"/>
+				</properties>
+			</input_port>
+			<properties>
+				<property name="Name" value="Pipeline Output"/>
+			</properties>
+		</node>
+	</nodes>
+	<edges>
+		<edge ID="17" fromNode="3" toNode="6" fromPort="5" toPort="7" style="line"/>
+		<edge ID="18" fromNode="9" toNode="13" fromPort="12" toPort="14" style="line"/>
+		<edge ID="19" fromNode="6" toNode="9" fromPort="8" toPort="10" style="line"/>
+		<edge ID="20" fromNode="9" toNode="15" fromPort="11" toPort="16" style="line"/>
+		<edge ID="21" fromNode="1" toNode="3" fromPort="2" toPort="4" style="line"/>
+	</edges>
+	<scenarios current="Scenario1">
+		<scenario name="Scenario1">
+			<deployment DeploymentModule="Java Deployer">
+				<properties>
+					<DeployDialogProperties>
+						<property name="Target Directory" value="java" type="6"/>
+						<property name="Package Name" value="fatca.prudential.com.sg" type="1"/>
+						<property name="Class Name" value="FatcaCSV2XML_v2" type="1"/>
+						<property name="Execution Log" value="stdout" type="4"/>
+						<property name="Add to Project" value="Yes" type="5"/>
+						<property name="Generate Inline Code" value="Yes" type="5"/>
+						<property name="VS Project name" value="csv2xml" type="1"/>
+						<property name="Open the C# file" value="Yes" type="5"/>
+						<property name="Main Method" value="Yes" type="5"/>
+						<property name="Create VS Project" value="Yes" type="5"/>
+						<property name="Embed XQuery" value="Yes" type="5"/>
+					</DeployDialogProperties>
+				</properties>
+			</deployment>
+			<execution-framework type="ddxq">
+				<component name="Validate operator" value="Java built-in"/>
+				<component name="FO operator" value="RenderX XEP"/>
+				<component name="XQuery operator" value="DataDirect XQuery"/>
+				<component name="XSLT operator" value="Java built-in"/>
+			</execution-framework>
+		</scenario>
+	</scenarios>
+	<merged-xquery-collections/>
+</pipeline>
